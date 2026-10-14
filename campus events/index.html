@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Events</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"  href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAvQMBEQACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAABgQFAQMHAgj/xABPEAABAwMCAwUDCQMGCQ0AAAABAgMEAAURBhIhMUETFFFhcRUigQcjMkJSkaGx0RZiwSVDVZS08CQzNXN0g5Ki0hc0NkRTVGRygpOy4eL/xAAbAQABBQEBAAAAAAAAAAAAAAAAAgMEBQYBB//EADwRAAEDAgQEAgcHAgYDAAAAAAEAAgMEEQUSITETIkFRMmEUM3GBkaHBBiNCUrHR4RU0FjVigvDxJCVy/9oADAMBAAIRAxEAPwDuNCEUIRQhFCEUIWCaEKlN8YmSZtutb6F3CO3nCwdoPgab4gJLW7qZ6I6NrJphyFc5u9+lTmM3dtbVztcgKbcRkNOkHOxQ5A+FQ3Sk+LcLT01FHG77k3ZIDodxpuPLur/W0tubZLRqGE8Wy08khaMbkhXA4z1FOzOzNa8KuwqJ0dTJSPF7g+zTZb4N6Tckz7LARJnxu6LKJjqyourP1eQFda/MCxvxTUtHwclRIQ11wC0dB33UOwW/U0Ni2x2LWxCDCx3mRvSVvozxB4cOHmaTGyQAACyfrZ6CV8j3SF1xyjWwKmPaXnyLtf5UhiKtueyUx8qyUKHBJ4jhkUowuzOPdMMxGJkMMbSQWG58wtNzsd7dsunYK4qXzCeS5JIez9HgOfPgSfhXHRvLWt7JyGspW1E8oNg4EDTutGq4sm732f2sOQ2xBt7hjOKSdi3OByD/AH5VyUFzzpsE5h0sdNTss8ZnuF/ILRa578DRsy7fTuN2kbGiBxUo+6D8MfhXGuLIyepS5oI5sQbAPBGLn9VLs1gai3SE1armWbjFwq5IKjl0EZJweB4nnXWR2cMp16pqqrnSRPdNHdjvAe3vXQxyqYs4gEHkaELNCEUIRQhFCEUIRQhFCEUIRQhFCFgkEUISOi83i7XiWqFLiwYNuf2vNvDKlpHNR8BUbiPc7Q2AV46kpqeBvEaXOeNCOi0X6TGUmPrGwutud1VslBPDtUZwc+dckI9azonKSN9zh9SLZtvIqW1bF3m8N3aChoWufHAmMvpOV8+Q6HzruQudmGx3TJqhTwGB5Odp5SOn8K7tmnrba7eqEhvtIwdLoS+dwSfLPSnWxNY2ygVFdNNJxXHW1tFLgz7e865GhPsqWyBvbbI92li3RQWztlcQHXIWL3ckWq2PzlJ3hpOQjONx6DNBNhdJnlEMZeeiSv8AlMX/AESn+s//AJprjeSpf61/o+f8Ju03eRe7WmZ2XZK3lKkbt2MedONdmF1a0lSKiMPUudcIUINibIba7VW1G8/SPhSibbp58rI7ZjZQrzZIV7gtMLUUBtfaMOMEAoUOo6U2+MOFlOpK2SB5e03vvfqtGm9OKtEmVKkzXJ0p8gF5xOFBIHAUmOLJcncp6srvSGsY1uVregVbqebKu11GmrWstlSQqbIT/NN+A8zSZXF7uG33qTQwMgh9MmF/yjuV70/Z51gvr0eMtZsfYBWXnNxDnXHh0ojYWPsPCk1dVFVQB7x97fp2TVHksSm+0jOodRnG5CsjNPgg7KqcxzDZwsttdSUUIRQhFCEUIRQhFCEUIWt11DLa3HCAlAJJPQCjZdAJNgue3fVbcyU1Psl1aPdMkwXgUdv44V1qI+a5zNOy0VNhjmMMU8Z5vxDW3uW1aE35aNQaX7NNySNkqI7ycH2VfrR6w5490nmo70lX4DsR08wrnSmn3YXfZVxS0l6cvcuM0Mttjw86dijLbk9VBr60SljYybN6ndMyRhIAxgeFPKsXJteXKeb5JhuynO7JICWwcJwR18ajyE3sszic0vGLL6KjtNyftM5qZEIStHQ8lDqDTYJBuoEE7oZA9qubzqW7aijmKmIEsKUDtaQVZx50457ndFOqKyaqZkDdFU+xbp/R0kf6s0jKVE9DnP4SrKzXq76ZQ40iJhpxe5SXkHGeXPpS2lzApMFRUUgLcuir9QXp++zjIkgJCRtQ0DkJHlSHOzKNVVT6h+YqTpW4z410ix4klxCHXQkozlOD5GusJBT1DPKJWsadCuzg4FSlrEt6g0qm5yVy4U12BKdSEPON/wA6jwNMyQhxuDZWVJiPAbke3M3pfoVSXHtZ85WmmZRiWy3tIMx9a/fcT4DyxTTjc5L2AU6ANij9MLcz3nQDYeaNGNNe3JkuxtKjWNDexRWeDyx9YfrRCBmOXZdxNz+A2OoN5T8h2T1DlMzGEvxnUutL+itJyDUoEHUKgexzHZXCxW+upKKEIoQihCKEIoQsE4oQlW7X6au+It9mQw6mMN89bqsJQk9PXrTDpDnyt96taeijEHFnJF9G26lV2oLRAlut3OxqjLnlrtUxiAUyUdfd8fOkSRtJzN3Uqkq5ogYZ75L2v1aVc6ZsUSElFxNubhznm8OttKJSnyFOxxga2sq+trJJCYs+ZoOhVNrXV/d99utbnz/Jx5J+h5DzokfbQLL1+I8O8ce/dUtt19c4cRTEhtEpWMIdUrCk+vjSGykaKHFi8rGZXC5WiPZblqB1263R9EWOeK5Lw2jHkKA0v1KI6SesfxJNArWHHtEFsG2W0zz1mTF9m1ny4cfgKizV1NAct7nsrqnwyKMaNv5lWSJdyfd7AXJqKnGdkOMMJ4Z4qVz4eAqsnx17I87Y7e1WLacDRQVTbo245C9qSSTdWmA8QnclBZK8cscxVjHiDn4caq2oF/nZIyWkyqczLnlP+D31D4VuARJYSsHCtp5YPPhVWMdnZ62LQdk4YAeqiTosSSk+1rM2BnjLty84PiU8/wA6nU+L0s5yu5T5qDPhscgu5vvVHJ09JhJRdbBKTNjtncFt/Tb9RVjl/E03CopsNlpzxIje3xW9/wCUC5O28R2220P4wt8cz6Doa6ZTayH4tMWZbWPdTdHayWh0Qbw6VoWcIfWeKT4HypTJOhT1BiRvw5T70133TVqvikSJjBccbTgKQraVp8Ceorr4mv1K1dJiE9MC2N1gUrIky9QhyClTdktERYZeRuHaLP2fIGmQS/TYBW3Cjo7S24kjhcdk6Wm3QbFbxGhAMxwrd7yuZPmakNa1gsFSVE81VLnfq5WQ5UtR1mhCKEIoQihCKELBoQlLUGiIVyLj8FaocxeSpxBOHM8wodRTEkAdqNCrejxeWCzJBmZ27exQ7BZ58+9NTr9FaZVa09ixsTgOn7fpSY2OLru6J+sqoYoDHTOvxNT5eSeCBjpUlUK45re1tWu+upZUnsnR2oSPqZ5io0jbFZTEoWxTm2x1U+x2RiDGZud5ZU644rEOCPpOq6E+X5VwubEziSGwCnYdhx0kk9wVvNLzqmJV1KHhvwGUf4mPjoB1V+8az1Rib6pzoozlA+JWlbFl1K9x48mU4lYdWEoyd7nvJWrPukDoME5+FVc1RDDe1rlPBpKlQrUiK4He2cU4OfLB8vHyqDUYi6VhYBYJTWWVU6D7XUeeL2z/AGZVamN3/oz7PqorheZWLtkjFv5klCkoCQoDnjPE/E5+FZmLFJQ7mFwSpJjC1bJkErcQ02EbgotoVjPDAA+PGpOamqjYu5tlwBzURy1Kk96t76Y1wT9JaOKHeY94fWBwfOpUFZU4eRfmjTbmNfqN1W3uzIvLTsmEwI10ZGZEQHg4PtI8a1UM0dVHxIys/iGG5rvYLO/VLenbcm6XqNCdWG0KXlQV1A5j1pbG3cqSkhElQGFdsbbQy0htsBKEAADwAqUtgAALBKOs7bb4a/2hdtxmONbQtvdtRz4LUOuKjysa3nsrrDZ5ZB6IH5Qev0Ub2Ld9UhKr3NRDicFtw4qgT5Emkhj5LFxsE4aqmoeWBmZ2xJ+ieWUdmyhG4q2gDceZqSNlRuNySvddXEUIRQhFCFgnFCEZoQok+c3CS2p1Dqw44lsBtBVgnqcdPOuE2TkUZkJA6Le+6hhlx1w4QhJUT5V1NOIAuVyx7Xd4Ep1TLjXZFZ2IWj6I6cajmUgrNOxaYPNtlrsTAu1xl328qzFjHtHf31dEgUN1OY7JdFC6qmM0mwV05IdW67Lcwbk8kBDYGewb5hsDxxz61m62p9LkyvNox8/4WrjblCkx4zceKZNxUlLSfeKeST4Ej7XSqiWoMsvBpxqfkngA1tyt0adNcuTLT8QMRnmFONbz85wIHEchkHlSsRwgUlKJXG7iUlkuZ1grKqBSEuqx7Uc8fbTP9nNbln+R+79lCPrlZ35RTYZ6knCkxl4I9DWRw8XqWA91Lk2KPZE+2w2pFsccmxy2krhvrysDHEoX/A/fW4rsDhn54+VyhsmI3VfsakRzcLU52ZzsUlScFrHAjB+iRxzwrOiZ7JPR6obfNP2B5mqSS7LbTKibm5sUlTS1g4WPA+IUPu4Uqlqjh1UG5rsKTI3iN80vamipxG1HbAWUurw8gc2nhz/L++a2hIcA9nVZXEqcwvE8f/CtS9d3skHtWUgYztb54/WjiOUb+rzkhdMjOMXq0IcUkLakte8nnzHEU/o4LTU85IbI32pFhyGtNTJ0OyWWZMnR0/OvvO5ARzHoPKogcIyQ1pK1D2OrWMfUShrD0A6qdY73dVX+Cq6yI5jXSOTHaZVwQRxHxOaXHI4vGbqmKujpxTPELTeM6k7m6falKgRQhFCEUIWFcqELnOpLdeY95lz5Ei4ez3TlCre5lTIxwygjiPSoUrXhxdrbyWkop6V8AiDW5x+br7170P3ufOjSjqJ2W0hpSnYqydySTgZ8fOuwAuN810nFeHGwx8HKdLHum3U8KVcbJJiQlpS84nHvdR1HxqU4EjRZWqjfLCWM3K4zLiPQ5K48hpTbyDgpIqKQRusg+N8bsjhqn1uImHEt1p27ktN98lpHNavqJ+/8qh4tPwabI3d2i2OHU/Dja0e1bbel2ZKcW4FNx94c25AUV/vJ+qfjWWqnshiDGeK1laNFzdT7RHF5uCpj3/MIjmxhHRx0c1n0PAelaLA8OFPFxXjmKjzPubLfelY1LCR4xHT/ALyab+0v9oPaiDxrZWCCnpTdYUdTduDhIujbZTj6WY+Rn0wfvNbtn+R/7VBPrld6hUn2FPSVAZjOYz6Vk8Njc6pZYdVKk2KZ7eoLgR9pB+aTyPLgK9RVcqHUsQ2yR7bjAlvITOaHJSOXaeqfxHpVRi+HiqhJaOYbJyN5aVIB3AHOeorzdwIdYqwHkqpcVtc6XbnB8xdWiQPsvJHMeoAPwrd/Z6rM9OYXbtVbWwNe0tOxXN+7Pd6VFQhS3gvYEJGSTVzYkrCmJ2fIN11zQ9snWuzd3nqTu7QqQgcdiT0J9c1IYCBYrV0EMkMIbIoOp4bVvvTF+cu3s9jalt9CW9xkYJIT92aakaA8PvZaWhldLAaUR5zuPJVjuqNOB9ia3ZJa24w2okiKQlpPiKQZo/FZSm4bWFpZxRd3TNun9p1LzaHGzlCwFJPiKlA3WeIINitldXEUIRQhYVyoQtQWhQJC0keOaLrtjex3VdaonYz7g+YEeOXXBtdaXkvJA4FXhSGjUmykTSZo2Mzk26Hot1yvFvtg/wAOltMkjO1SuJ+FKJAUCSaOPxmy5rPlNah1wwtlRVGW62lKsYykcT/GmCczws/JK2prhl2umRLJuM28rKyhLkjsUEAH3UJA6+eazGPVZiqmC17dFroG3aSle/6odsb7dngliXJe9x15S1EpUo7U+PGp+G4IMRHpMwygbDukyzcPlC6na4aIFtjRWxkNNhPqfGtBa2yZVTfrZcpN2izraIqi0y40pEhakj3ik5GAfCoNfQtrIuG42SmPLDcKN3LUv/d7T/77n/DVJ/heL86e9Jd2VRPt822yIsu4qjhci7Jd2sqJSlKY608SQPCrSakbFhzoGnomw677rlepNQS71PdUp1YjpUoNNhXJOa0WE4TBR07QG69UzJIXOU7ROqJliurAU+pcN1YDra1cPXyqdVU7HMzDRNgm67Y9qGwSWVMuXe3qQ4kpUnvCOIPAjnVJZPJb07dYghphLltrVFW4z2pV7pSgnac/+XBrz7FsNkbO57BoVOieC1TbwsNsR5rZBMeQ26kjqnIB4+hNcwCQw1oYdL6JM4uy6Wru6mza+MkjDQdS7w+yocf41ujyvusdO4U9dnO2/wAQuiWy+2y5rCIUttxZGdnJQ+FPhwKvoqmKXwOUHWVrkXKLFdglrvUR9LraXjhCj4GmpmFwFt1b4bUshe4PvlcCNN1CXZL5cbFMhXW5NMOyXAQtlBUltGOKccK5w5HMIJTwrKSCpZLCwkAde/fqmS2NNsQY7LLodbabSgLH1sDGadaAG2CrZ3F8rnOFiTspdKTaKEIoQoF+RIcs0xEPPeCyoN48cUh9y02T9KWNmaX7X1XNLfFan21mE/CuUa029kyJnaJUlbz3gnx6mojW5hbWwWnmmMUpka9rpHmzbbNHmm/5Oe8ewCXQ6GC8sxUu/SDeeANP098uqpsYLPSeXewvba/VK/yn/wCXGP8AMD865LuFh8Z9a1VeiADqqBu+2cf7JrkfiUXDf7lqvJlul3KxzWYcruylTHiVgkZG88Djoaz1VVxU2KZ5m5gtoxhdFYLkchp+3z1tOEtvsrzuSeIUORB+6vSaZ8c0AczwlQiCDYp80YNUXxYlO32W3BbcCXNzhKnccSE45dONZnHsWpsPHDa3nKfgiMmqe/Zh5e0rn/WlVhj9o67y+CmejsWDbD/SVz4f+KVXR9pK7fT4Lno7FSuF8XBqG7Jffbbu6EtqfWVlGYyzwz8a03pD5sJM797XTGUCSwXOtT6bnWWe6A0t2MtSi2tIJ4Z5H760OEY3T1MDbus4b3TMkLmu0UjSOmJ1xuTTzzC2YzKwpbi04J8AAaYxzG6anpy1rgXFdhhc52q6zcWtsJ3sW2SoJ95S0jBHX4+FeY0dSXVAMjjY+anuaLbJFSZKZ6dhKWQRzLW7PZnGena45frW3+4Met81lF1umuXvGkn94TwjEox4dM46+lZaHL/VmZe6kOvwjdL+v+N8aPUw2s/jW3l8SxeL+vHsC1aAx+1MX0V+Vcj3SMK/uQnz5RQk6SnbjgBIPD1pdR6sre4ObVrCk79nbY9EF1Qu4vWkw1OlZdO8OA4Axz+FR+E08w2VycSqGvMJyh+btpZOvyf/APRK3Ap2kN8QRjHGpEHqwqTFv72T2pjp5VyKEIoQihC84NCFkcqEKiv+loF8WHZXaoeSnaHG1Y4enI0lzA5Q6miiqNXbrnzcEad1tFYU4pxtl5BCyMZSoY/jTFsrwqNsIpa0N6JrcgX6I9cEQbbHktPPqcZWuWEcFY4Ebc881X12Cx1k4mL7W8rrWMlLG2CQrh8nGrZ856W8zD3uq3EJkcBWqpJ6emhbE2+ijuDnG6YdJaf1Xp5hyKq3wpMdat+O97VJPXHA5rP41hkGJPEgcWuHknYZHRi1leqmT0TDDmQURXSyXUlL4cGM4xyHGsjW4GyiaHvfcHyUtkuc2svMF51d+uTbiwUIaY2JzyyF54edQqmJjaKN7RqSnGnmKqns+3U8OV5b/sq61UAvgTv/AJ+oUY+tV7d31x7TMeaUAtthaknHUCsdhrOJUsYdiVKkOl16i6dnPRmXVahnJK0BRCWWcDIzj6Fbx2C0Tt2fNQuK9e3NMzAhW/Uc7Zj3sss4x/sUNwWiabhvzRxX91U2CAw9BQ+8kPpUVhrehKQW9xCSUgbc46461lMXq3RTuhjNgFJibmbcqXfUgWsx0JADy0MpAGOBUBgUzgjHTV7XE7LsxswpY1Ix7V1t3JC9o3IY3AZwAK3zxmesZWN49bkCdbFo232eSiU0t52QnIClqwOPkKdbGG6q2psPigdmablMePupanoAOONCEAGhC9UIRQhFCEUIRQhFCFW6gunse0vzewU8WwMIT4k44+VcJsLpiom4MZfa9lxu63SVdbiqbJUO14bQBgJA5AVFLiTdZKapfLJxHbp0k9jdHbXc3nX+7zGewWESFoCHhy5HrxH3Uxic1QylzwHULX0UjJmNceqnewYX2pf9cd/4qxv+Ia7uPgrPgMU7TklUF9dnlOLWMlyG4tRO9HVJJ45SfwrX4TiArYbk8w3USRhYVi7DGqmF9O4qH+/Vd9pz/wCK0eacg8SWbK/2ms7m4gbkPI7LIPItkcPxVUHEYMuExDqE4w/eFeZ8dqXeFx30pWhV4ayk/wCiq41bUkpiwTO0XNvqmni8tlG1GG46mUR5TjhKZDboMlToIDRIznkfx86YwrPI7NI0DqNLf9pUmmy6fbv8nxf8yj8hWlUdVGqJ6lITaIhPe5YwtSf5lr6yz+Q8zUHEKxtLAXndKY3M6y1stIYbbZaSAhCQlIHQAV5jNIZHl56qxaLCygPvNquyVukd3trSpTxPLdghA/M1r/s1SZGuqHewKFWTBgN9gueIukhq7G6ML2yO0LgJ4860RdY3CwvpDhNxRuutaSvar7be8uMFpaVbFccpUfEVJa7MLrU0VV6THmIsrylKWihCKEIoQihCweXChC8IcSpxSAoFSPpDqKF2xtdbKFxFCFHnxG5sN6M6ModQUn41wi4skSMD2Fp6rjDunrqmU9Hbgvu9krZuSg4V55qMWm9lknUcwcWtarbSslJ73py5AtJkK+bUeBadHL04jNKbYgsdsVYYZUGJ/Bfomu3SXHEuxpSdk2MdjyfHwUPI868+xfDnUkxsOUrXxPzhbJ0NuYyW3CpCgdyHEHCm1dFA+NRKGrlppg+P4JT2BwsVVNXCSu4CbcVMqjRoikd8QrCHSFceB5HhyrU4jM6uhZGxpz31CjRjI4kpdsLhZvMaTICUbl7FKXjOV56nCgMkcMEedTcRjElI4M1sFxhs5Wc15mNdy5JcShpN3bKis8AO6qH8RXKaKSTBcke9lx5AlS0UIRIuKW0hKRc5wASMADsasY7lkQP5PqknquzR1luztLBwUxgQf/TU3omylfTzYXbWpzii5KmIS6+6rmpRHLyA6CvOccqZJKpzHHQKbA0BgKlXCX3RjclBcdWQhppPNxZ5Af34VFw+ifWTBg26lLkeGNulfVMn2fBFmaWFzZKw9OWjqo8keg4fdXozWNhjETdgsritVf7pu53VA5Ybs2UBdukJ3YAOw4zRkcqj0KcbtOq7FYbem12qNETjKEe9jqetSmiwstXTxCKMMHRWFdTyKELC1BKSpRAAGST0oQBdeW1hwBSTlJGQfGhC90IWCeFCEq61cm2plq+WzBcjnZIbPJxo+PoePxNMTZm8zVa4WyOoeaaX8W3kVP05qSDf2N8Ze14D5xhR95P6+tKjlbINFHraCajdZ407q7Bp1QlmhCwrlQhcg17Jiv6ic7mnapsBLjgPBSx1+FR5CCdFlsTew1F2bhW1ouovzbKC6hi+RU4ZcX9GQj7Cv78+NMz08dXEY5ArbDsR4lmnRw+aVteasupfctPdnLckJ+dBV77mfA/Z9OdOYH9mqenPFecxVrLUF3KElvzJMmIzCdfUYrQ2ttZ91Pnjx41p2UcDZHStbqUwXuKkP3qfJuDE6Q+XH45Cmt4yEY8BypDcPgbE6IDQ7o4hvdWEufKm6TdlSnS6+q9o3KXjjiOSKIqOKE8JgsLfVBcXalFnuUiTOdTIUFB3vEhRxzcU2QT6VBraOOJgcz2JbXEr6AaP8iI/0Uf/ABqF0XTslC1T241gtTYCnpLkZAajt/TcOPwHnWEqMMmrMQeALC+6mNkDIxdeLpcfYAMuWpt+9uow0ylWUREn+Pn19K1dJSRUMWRm6p8QxARD/V0CVNOzWRqSNLueXUrdytSjyUeSj8afaebVZ6klHpIfLqu1pIPEEHNSlrlmhCKELRJksxWVvSHUNto4qUo4ArhIG6UxjnuytFykcahXq6/NWq3FTdtb+ckOfWdSDwHkCcetRuLxHZW7K9dQCgpjPN4zsO38p8ThPgB4VKVAvdCFVXy3y5kP+Tpi4kpHFtaeIJ8FDqKQ8EjQqRTSsjf963M07/wucy9a3yAp+2XyCw+opKFoOWyQeGQeOahGokbyuC1EeD0kzWzU7yPmk1l5yK8l6M4tlxByhSDxFRwSDcK/fG17MjhdPun/AJSHG9jF8Y3p6SG+fxFS46ro5Zyt+z7TzU59xXQ7bdoF0aS7AlNvJI+qeP3VLa9rtlmp6aWB2WRtlLVxGKUo65jrfSioTi7jASVRVHc6gcS2ep9KYkZ1Cz2I0BaTLHt1VJbtNXe4RVS4zC9iPeSVHaVY4+7SGscdVChoZ3tztFrKYu7xrjHFs1fCU8lvITIA2vM/rUiGpfE7RT4MScz7uce9U8z5PXZCe301co9wYPENqIQ6nyPHBq3ixFrvEFbxvZKLsN0tztPXmCoiVapbfn2ZUPvFTRURO2KVYqUYckaGWVR3h/LaTgtnOO7qGcetJ4jONv8Ah+q6s6btN0fmlce3ynAWloHzRAypJA5+tRa9zXMygrrN131+VEt9qbRcJDbA7EJVvUM8sVUXtquvkYwcxsudr1DBtTHctLRVBagEKmPe84r0H5flTTpdeUbqmqMUuckA17qunaaviYntKTHW4F+8rqseZFILHbqvloajLxSL3UzR+lXLy6JMrciEg8+RcPgPKusZc3T1BQGZ2d+jR811hltLTaG2xhCBgDwFSFpgABYLLjqGkFbi0oSOJUo4AoOi6NTYJQv/AMoFst25uCO+yBwwg4QD5q/So8lQ1uyu6PA6ich0nK35rml91Bcb66Fz3soSfdaQcIT+tQnyOfutXR4fDRttGNe53UnTmqXdORZCYURpb0hQK33FngByGK7HKYxYBMVuGNrXtL3EAdPqugaUa1Dd3EXG9ySzF+k1FbTs3+avKpkXEdzOKzWIGip7w07bu6uTmkYqQqVZNCFU3/T8C+Ruymt+8n6DqfpI9DSHxtfupdJWzUrs0Z9o7rk2o9G3KxlTm3vMQHg82nkP3h0qvkgcxbKixeCrGXwu7fslwEEZB4dTTKtirXTNtlXW7Bi3yu7SNhWHckcB6UuJrnOs1QcRqI6eEukbmCeIl2vNpdMaXf7S+WuCm5G5Kx6mpQe9mhcFnZKalqRnjicL9tQr2Lq+3rG2fKgIBHEtv7x+Ip5szetlXzYXKByNcfaP5TBBksTIrciI4lxhYyhSeRHlToNxcKvfG6NxY4WIXJNdFxWppRWlSU7glJUMbsD8ajy+JZLFL+kEkKlgsyJEttmGFmQ4cICDg/fSBc6BQomvc4CPdMkmZq6wtpMp18NZ2hS8LT99OXe3dWT5a6mHOdFo/bi+YwXmT/qhXOK5N/1aoW6LdtWXwKTCedUlJwotAJA8s10F7tk4yoranwFUV1iTIc1bVyC+8J4krVu59c0h1xuoFQyVjy2XdbdOKcTfYS20qWpLySQkZOOVDNXCyXR347S0Lt/3ZzUtbFUs3Utogrcj97jJfaVtLSl7cGm3StbpdTIaCeQAtYbexUU/Vcl5KkwrlZY37y3lOEfgKZdMehCsosMY3WRjz7rJZ1Ja7zItK7xOvTcyKjHuN7glXHHAcqZkY/LmLrq1oaqkZOKeOItd5pN4592o2y0Fr7KVbbbMuj4Yt7CnnOu3kn1PSlNa5xsAmKioip25pXWC6hpTQMe2qTLuikSZXMJx7iP1NTo6cN1csjiOOSVHJFyt79SncDFSVQrNCEUIRQheSlJBBGQedCErX/QtquxU40kxJB49o1y+Iph9OxytqPGaim5TzDsUnu6Tuem0XGUt1DsdMR3a82dpBxwyKjGF8d3K8GKwVpjitY5hoVhDybtaIytQx1PI7MbZ7Scus5JSkKH1uNdBzDn+KSWmmnPorrH8p2PU27KhuenJUFrvUdSJsA/9ZY4gD94cwaYfERqNQrSmxKOZ3Dfyv7H6d11rQRzpC145dgKsYPVhYvFb+myX7q4mwos1ktS2UOoI5LGadVY+NrxZwuqy0aYtlpmuSobO1axgAnOz0pIaBqExDSRQuL2jUrbqe2G7WWRDbA7Racozy3A5FdcLiyVVQ8aIsC53+wV7+wx8Hf8A6pjhFUP9Hn7hPWjbM7ZLP2EgDt1uFa9pz5D8qdY3KLK5oac08WU7qRe9PwL0WDObJLR4FBxkeB8q6Wg7pyeljntnGymQLbDt7Ybhx22UgfVHH766AAnY4mRizRZSzwrqcXENRW+Xc9ZXSPCjqeX2/TkkbRzPSqyVpdIQAt7QVMcGHxukdbT91Kh2yBa1K3Jbu1ybTvLSP8THx1UfrEZ5UoNDPMpqWpmqNATGza/U+xWMBq63+DqGEt0Pyt7SEp+ihIBPLwFKbne1zbqLK6no5IJQLN1PmVPs3yZtIUl28ye2wc9gyNqfietOMpfzKNVfaJ7hlgbbzT5At8S3xwxCjoZbH1UDFSg0N0Czskr5XZnm5UnArqQs0IRQhFCEUIRQhFCFTauace01cm2W1LcUwoJSkZJNNyi7CpmHOa2qjLtrpIsL6E6djJ3p7RmP2rqOqVBe1KT55qKzw2V9VscapxPU2HstuoF7nTIF+jN21cWO48sI7aMch3JA+cT4g0h7iHANKk0kEUtM4zAkDoensKbbbqGVBUYku3h9hpIV3q3pygAkjJRzHEHlUlspGhCo5qGOXnY+xPR2/wAUw2u9W26J3QZjT2DgpCveHwp5r2u2VfNSzQesbZWGR40pMI4HwoQjhQhHDpihCOFCFrfeaYRvecQ2gc1KVgUEgalda0vOVouUtTNawe2MW0NO3SX/ANnH4gep5CmHTt2bqVaR4TNlzzkMb3P7JbkG5XdIclyWYba19o9bo6SFqTu2++vxyMUw4udqTbyVpGIKclrGlxAsHHba+gXu2OwjBEuNHRFjqSe0ZB4IClbFY/A11hba7RYJM7ZRJw3nMRse+lwrL5PGVJut+cAKmC+EtuY91ePCl045nFRsYeDDA3rZPGB4VKVCs0IRQhFCEUIRQhFCEUIRQhYPKhCW79pKNcVmVEV3ObkKLiE5S4QcgLT1GRTL4WuNxurKkxKSAcN3Mzt2v27JBvVvkQdSwpFxt7UJsvpU6+2sllas/S8unCoj2kPuQtJSVDJKR8cb8xtoDvbsrB9bMKzPI7xIWttQHbQFbglaitQBPhxGfWlaBhURrXSTgkAX6O7Cw080SIbNzVGKkoSlLQSh1A2ONAKG9JH2hg8fOggOIXGSuhDvM7HUG+3uKzAnXB1CpFiustEVC20FiUO0Le4KJyTz5D766HOAuwrssMLSGVEYza6jS9rfv8l6tWt7/KjqeQ1BdQlwoWV5RtwkqycdMA/dXW1DyEVGD0cbspLhcX79bfsp8vWV/gtIXKs8MBTJe4SCcAEZB4cCNw4edKM8g3CjRYTSSmzZTvbb+fJeLhrDUcaA5MXbILbLbhbWQ+VKSQrbnHhmuOnkAzWXYcKopJREJCSRfbyuo3tq9T7fFluXyJFYeSpa0R2craQlOVEk8Mjhw86OJI4A5ks0lJDI6NsRcW23OhJUdNiYm7X7jNkT0qLmFurICkdnubVjpz40jhg7lP8ApkkfLEwM22HnYhb4b0Yrlx30d3YhpLIXHTsXs7MK5+ORn410Hv0TckbwGuYbl2uu172/hEu4rbIglAdlqdW6yGhuUshQUhJ/dUk9aC7oFyKAO+8Js21jf2a+8FXFu0kqa6l64Ndzh9nsFvbXu3AnJ3q9elOthzG50UKbE+GMsZzOvfMR7tB9U4x2G47SWmW0ttoGEpSMACpAAA0VM5znEucbkrbXUlFCEUIRQhFCEUIRQhFCEUIRQhYVyoQtTraHmlNuoStChhSVDING41XWkg3GiQdZWePp+3vzrK49DLgIcZaX80vPikj8qhTMDBdui0GHVb6qQRz2dbYncKns12fuUloPtspBUy2rs07dwWSFE+Z8aQx5cRdT6mmZAHBt+p+G3uTEGO7LMftnHEojEBThBJ2tkjkKcA0I8voq4Pztz2td3TzK57YH1s2y7JQRh2O2F+fvgfkT99RmHxDyWmrGAyxHsTb4K8m59n6lJJJE2SOPo3+g+6nDqHE+f0VfFZstPb8rPqperW22dPSJKEDt3p7kZTnXs+1UvH3pFLlFoyfOyj4a5xqmsvoGg+/KB+hVbY0hyzNNq+ituYk46DsxTTPD8VKrHFs5cNwWfqUw2pRFuU3zSI7I4+aW/wBTTw0aqyYXmBPc/qf2VLbJT18ucS3yFBlvad62EhK3cDZ7xOc+7wpF8zmtPVT6mNtJG6Vmp89hudPeumWizwLQz2cCOlvI95fNSvU86msY1g0WTqKqWodmkN1YjnS0wF7oQihCKEIoQihCKEL/2Q==">
+</head>
+<body>
+
+    
+    <header class="navbar" id="home">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-box">CE</span>
+                <span>Campus Events</span>
+            </a>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#events">Events</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#register" class="register-btn">Register</a>
+            </nav>
+        </div>
+    </header>
+
+   
+    <main class="container">
+
+      
+        <section class="hero" id="about">
+            <p class="eyebrow">CAMPUS LIFE · 2026</p>
+
+            <h1>Discover. Participate. Grow.</h1>
+
+            <p class="hero-description">
+                Explore technical, cultural and sports events happening on our campus.
+            </p>
+
+            <a href="#events" class="primary-btn">
+                Explore Events →
+            </a>
+        </section>
+
+      
+        <section class="events-section" id="events">
+
+            <div class="section-header">
+                <div>
+                    <h2>Upcoming Events</h2>
+                    <p>Don't miss out on the latest campus activities.</p>
+                </div>
+
+                <a href="#schedule" class="schedule-link">
+                    View Schedule →
+                </a>
+            </div>
+
+      
+            <div class="events-grid">
+
+      
+                <article class="event-card" id="tech-event">
+                    <div class="event-banner sports-banner">
+                        <img src="tech.png" alt="Sports" class="sports-img">
+                    </div>
+
+                    <div class="event-content">
+                        <span class="event-category technical">
+                            Technical
+                        </span>
+
+                        <h3>Tech Fest 2026</h3>
+
+                        <p class="event-info">
+                            October 15, 2026 · Auditorium
+                        </p>
+
+                        <p class="event-description">
+                            Explore innovation and showcase your technical skills.
+                        </p>
+
+                        <a href="#schedule" class="primary-btn details-btn">
+                            View Details
+                        </a>
+                    </div>
+                </article>
+
+      
+                <article class="event-card" id="cultural-event">
+                    <div class="event-banner sports-banner">
+                        <img src="culture.png" alt="Sports" class="sports-img">
+                    </div>
+
+                    <div class="event-content">
+                        <span class="event-category cultural">
+                            Cultural
+                        </span>
+
+                        <h3>Cultural Day</h3>
+
+                        <p class="event-info">
+                            October 20, 2026 · Main Hall
+                        </p>
+
+                        <p class="event-description">
+                            Celebrate music, dance and art performances.
+                        </p>
+
+                        <a href="#schedule" class="primary-btn details-btn">
+                            View Details
+                        </a>
+                    </div>
+                </article>
+
+      
+                <article class="event-card" id="sports-event">
+                    <div class="event-banner sports-banner">
+                        <img src="Sportsa.png" alt="Sports" class="sports-img">
+                    </div>
+
+                    <div class="event-content">
+                        <span class="event-category sports-category">
+                            Sports
+                        </span>
+
+                        <h3>Inter-College Sports Meet</h3>
+
+                        <p class="event-info">
+                            October 28, 2026 · Sports Ground
+                        </p>
+
+                        <p class="event-description">
+                            Compete, collaborate and showcase sportsmanship.
+                        </p>
+
+                        <a href="#schedule" class="primary-btn details-btn">
+                            View Details
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+      <section class="Event-Categories">
+        <h1>Event Categories</h1>
+        <div class="Event-Categories-List">
+            <h4>Technical Events</h4>
+            <h4>Cultural Events</h4>
+            <h4>Sports Events</h4>
+            <h4>Workshops & Seminars</h4>
+        </div>
+      </section>
+        <section class="schedule-section" id="schedule">
+            <h2>Event Schedule</h2>
+            <table>
+                
+                    <thead class="table-header">
+                
+                    <th>Event Name</th>
+                    <th>Date</th>
+                    <th>Venue</th>
+                    <th>Category</th>
+                
+                </thead>
+                
+                <tr>
+                    <td>Tech Fest 2026</td>
+                    <td>October 15, 2026</td>
+                    <td>Auditorium</td>
+                    <td>Tech</td>
+                </tr>
+                <tr>
+                    <td>Cultural Day</td>
+                    <td>October 20, 2026</td>
+                    <td>Main Hall</td>
+                    <td>Cultural</td>
+                </tr>
+                <tr>
+                    <td>Sports Meet</td>
+                    <td>October 28, 2026</td>
+                    <td>Sports Ground</td>
+                    <td>Sports</td>
+                </tr>
+            </table>
+            
+        </section>
+
+      
+        <section class="register-section" id="register">
+            <h2>Register for Campus Events</h2>
+            <p>Fill in your details to register your interest.</p>
+
+            <form action="#" method="get">
+                <label for="student-name">Student Name</label>
+                <input
+                    type="text"
+                    id="student-name"
+                    name="student-name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="student-email">Email Address</label>
+                <input
+                    type="email"
+                    id="student-email"
+                    name="student-email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="event-choice">Choose an Event</label>
+                <select id="event-choice" name="event" required>
+                    <option value="">Select an event</option>
+                    <option value="tech">Tech Fest 2026</option>
+                    <option value="culture">Cultural Day</option>
+                    <option value="sports">Inter-College Sports Meet</option>
+                </select>
+
+                <button type="submit" class="primary-btn">
+                    Submit Registration
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    
+    <footer class="footer">
+        <p>© 2026 Campus Events. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

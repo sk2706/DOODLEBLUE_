@@ -1,0 +1,17 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'times new roman', ;
+    
+}
+
+li{
+    background-color: #533994;
+     margin: 5px;
+     padding: 10px;
+     
+}
+li:hover{
+    background-color: #ff4250;
+}
