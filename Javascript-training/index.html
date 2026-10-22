@@ -1,23 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .highlight {
+      background-color: aquamarine;
+    }
+
+    .task-box {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+    }
+
+    .error {
+      color: red;
+      font-weight: bold;
+    }
+
+    .success {
+      color: green;
+      font-weight: bold;
+    }
+
+    input {
+      display: block;
+      margin: 10px 0;
+      padding: 5px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+  </style>
+
 </head>
+
 <body id="1">
-    <h1 id="uthra" displ>Testing Dom</h1>
-    <h1 class="class1 class2 class3" id="sathish" >2nd line</h1>
-    <!-- <script src="s
+  <h1 id="uthra" class="event-card">Testing Dom</h1>
+  <h1 class="class1 class2 class3" id="sathish">2nd line</h1>
+  <p class="event-card" id="p">hello </p>
+  <form action="">
+    <input type="text" id="textbox" value="hello from chennai">
+  </form>
+  <div id="event-list"></div>
+  
+  <ul id="event-list">
+
+
+    <li>
+      <h3>Tech Talk 2026</h3>
+      <button class="join-button" data-event-title="Tech Talk">
+        <span>Join Event</span>
+      </button>
+    </li>
+
+    <li>
+      <h3>Design Workshop</h3>
+      <button class="join-button" data-event-title="UI/UX Workshop">
+        <span>Join Event</span>
+      </button>
+    </li>
+
+
+    <div class="task-box">
+      <h3>Task 1: Click Listener</h3>
+      <button id="clickBtn">Update Status</button>
+      <p id="statusParagraph">Initial Status</p>
+    </div>
+
+
+    <div class="task-box">
+      <h3>Task 2: Live Character Count</h3>
+      <input type="text" id="textInput" placeholder="Start typing...">
+      <p>Characters: <span id="charCount">0</span></p>
+    </div>
+
+
+    <div class="task-box">
+      <h3>Tasks 3 & 4: Registration Form</h3>
+      <form id="registrationForm">
+        <input type="text" id="username" placeholder="Name">
+        <input type="email" id="useremail" placeholder="Email">
+        <button type="submit">Submit</button>
+      </form>
+      <p id="feedbackMessage"></p>
+    </div>
+
+  </ul>
+  <!-- <script src="s
     cript.js"></script>
     <script src="tasks.js"></script> -->
-    <!-- <script src="functions&array_class.js"></script> -->
-    <!-- <script src="functions&array_tasks.js"></script> -->
-    <!-- <script  src="obj&es6_tasks.js"></script> -->
-     <!-- <script src="scope_hoisting_closures_tasks.js"></script> -->
-      <script src="dom.js"></script>
-
+  <!-- <script src="functions&array_class.js"></script> -->
+  <!-- <script src="functions&array_tasks.js"></script> -->
+  <!-- <script  src="obj&es6_tasks.js"></script> -->
+  <!-- <script src="scope_hoisting_closures_tasks.js"></script> -->
+  <!-- <script src="dom.js"></script> -->
+  <script src="dom_tasks.js"></script>
+  <!-- <script src="event_tasks.js"></script> -->
 </body>
-</html>
 
+</html>

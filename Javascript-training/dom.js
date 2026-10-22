@@ -7,3 +7,4 @@
 //   console.log(document.getElementById("uthra").innerText);
 //   console.log(document.querySelector("h1"));
   document.getElementById("1").innerHTML="<p>Testing Dom</p> "
+  
