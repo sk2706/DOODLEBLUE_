@@ -5,7 +5,7 @@
         function loadNames() {
             return new Promise((resolve) => {
                 setTimeout(() => {
-                    resolve(["Karthik", "Arun", "Ravi", "Priya", "Rahul"]);
+                    resolve(["Mr.SK", "Uthra", "Vijay", "Priya", "R"]);
                 }, 2000);
             });
         }

@@ -11,6 +11,40 @@
     <p id="message"></p>
     <ul id="nameList"></ul>
 
-    <script src="load_event_task.js"></script>
+    <script>
+        const button = document.getElementById("loadBtn");
+        const message = document.getElementById("message");
+        const nameList = document.getElementById("nameList");
+        let count =0;
+        async  function LoadNames(flag)
+        {
+            set
+            if (count%2==1)
+            {
+                throw new Error("Database in Maintenence")
+            }
+            let values=["Mr.SK", "Uthra", "Vijay", "Priya", "R"]
+            return values
+        }
+
+        button.addEventListener("click", () => {
+            message.textContent = "Loading...";
+            nameList.innerHTML = "";
+            count++;
+            LoadNames(count).then((names) => {
+                setTimeout(()=>{message.textContent = "Names loaded successfully!";
+
+                names.forEach((name) => {
+                    const li = document.createElement("li");
+                    li.textContent = name;
+                    nameList.appendChild(li);
+                })},3000)
+            }).catch((err)=>{
+                message.textContent=err.message
+                nameList.textContent="continue using other features of our web application"
+            })
+
+        });
+    </script>
 </body>
 </html>
